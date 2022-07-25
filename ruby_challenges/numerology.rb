@@ -4,33 +4,23 @@ puts "What is your birthdate?"
 # 2. make sure its number
 user_birthdate = gets
 
-# 3. separate each number and covert to integer
-date1 = user_birthdate[0].to_i
-date2 = user_birthdate[1].to_i
-date3 = user_birthdate[2].to_i
-date4 = user_birthdate[3].to_i
-date5 = user_birthdate[4].to_i
-date6 = user_birthdate[5].to_i
-date7 = user_birthdate[6].to_i
-date8 = user_birthdate[7].to_i
+# 3. separate each number and covert to integer & add together
+result = user_birthdate[0].to_i + user_birthdate[1].to_i + user_birthdate[2].to_i + user_birthdate[3].to_i + user_birthdate[4].to_i + user_birthdate[5].to_i + user_birthdate[6].to_i + user_birthdate[7].to_i
 
-# 4. add each number together
-result = date1 + date2 + date3 + date4 + date5 + date6 + date7 + date8
-
-# 5. covert result to string
+# 4. covert result to string
 result = result.to_s
 
-# 6. use array syntax again
+# 5. use array syntax again
 result = result[0].to_i + result[1].to_i
 
-# 7. if statement in case 1 or 2 digits
+# 6. if statement in case 1 or 2 digits
 
 if (result > 9)
   result = result.to_s
   result = result[0].to_i + result[1].to_i
 end
 
-# 8. 
+# 7. output result 
 case (result)
 when 1 
   then puts "Your birthpath number is #{result}.\nOne is the leader. The number one indicates the ability to stand alone and is a strong vibration. Ruled by the Sun."
