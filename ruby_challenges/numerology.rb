@@ -50,10 +50,10 @@ puts "What is your birthdate? Input in MMDDYYYY form."
 # set to variable
 user_birthdate = gets
 
-# assign get path method with user birthdate to path_num variable
+# result of get_birth_path method is assigned to path_num
 path_num = get_birth_path(user_birthdate)
 
-# assign output message to variable to display to user
+# path_num result used as output_message param
 message = output_message(path_num)
 
 # output message
