@@ -1,20 +1,8 @@
 class Pet 
 
-  def set_name=(name)
-    @name = name
-  end
-
-  def get_name
-    return @name
-  end
-
-  def set_owner=(owner_name)
-    @owner_name = owner_name
-  end
-
-  def get_owner
-    return @owner_name
-  end
+  # attr_writer :name, :owner_name
+  # attr_reader :name, :owner_name
+  attr_accessor :name, :owner_name
 
 end
 
@@ -43,20 +31,20 @@ class Snake < Pet
 end
 
 my_dog = Dog.new
-my_dog.set_name = 'Sparky'
-dogname = my_dog.get_name
+my_dog.name = 'Sparky'
+dogname = my_dog.name
 
 owner = Pet.new
-owner.set_owner = 'John'
-ownername = owner.get_owner
+owner.name = 'John'
+ownername = owner.name
 
 my_cat = Cat.new
-my_cat.set_name = 'Pearl'
-catname = my_cat.get_name
+my_cat.name = 'Pearl'
+catname = my_cat.name
 
 my_snake = Snake.new
-my_snake.set_name = 'Hiko'
-snakename = my_snake.get_name
+my_snake.name = 'Hiko'
+snakename = my_snake.name
 
 puts "#{ownername}'s dog #{dogname} says #{my_dog.woof}"
 puts "#{ownername}'s cat #{catname} says #{my_cat.meow}"
