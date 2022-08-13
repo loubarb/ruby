@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
  
   s.name        = 'greeter'
 
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
 
   s.summary     = 'It greets you!'
 
@@ -17,5 +17,9 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://github.com/loubarb'
 
   s.license     = 'MIT'
+
+  s.bindir      = 'exe'
+
+  s.executables << 'greeter'
   
 end
